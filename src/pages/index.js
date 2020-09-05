@@ -1,9 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
 import { Flex, Image, Box, Text, Button } from "@chakra-ui/core"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../assets/ui/index.scss"
+import Seperator from "../components/Seperator"
+import FoodCards from "../components/FoodCards"
 
 const IndexPage = () => (
   <Layout>
@@ -36,7 +38,9 @@ const IndexPage = () => (
         <Button
           display="block"
           variantColor="orange"
-          marginTop={[["25px", "25px", "22px"]]}
+          rounded="md"
+          mx="auto"
+          marginTop={[["25px", "25px", "45px"]]}
         >
           Place an order now!
         </Button>
@@ -48,7 +52,48 @@ const IndexPage = () => (
         boxShadow={["8px -8px #f7d3b2", "15px -14px #f7d3b2"]}
       />
     </Flex>
-    <Flex direction="column"></Flex>
+    <Flex
+      direction="column"
+      width={["100%", "100%", "70%", "66%"]}
+      marginX="auto"
+      marginY="6em"
+    >
+      <Flex
+        align="center"
+        justify="space-between"
+        flexDirection={["column", "column", "row", "row"]}
+      >
+        <Text fontSize={22} fontFamily="Saira">
+          {new Date().toLocaleString("default", { weekday: "long" })}&apos;s
+          Special Menu
+          <Seperator color="#FB9C58" width={125} />
+        </Text>
+        <Text
+          width={["80%", "80%", "50%", "50%"]}
+          marginTop={["1em", "1.3em", 0, 0]}
+          fontSize={17}
+        >
+          A special menu for everyday and a unique day for every menu. We love
+          food as much as you do. Visit us today and let your hunger out! We
+          make all the food you love and eat.
+        </Text>
+      </Flex>
+      <Flex>
+        {[1, 2, 3].map((v, i) => (
+          <FoodCards key={i} index={v} />
+        ))}
+      </Flex>
+    </Flex>
+    {/* <Flex
+      direction="column"
+      width={["100%", "100%", "70%", "66%"]}
+      marginX="auto"
+      marginY="2em"
+    >
+      <Text fontSize={26} fontFamily="Saira">
+        Download Our Apps
+      </Text>
+    </Flex> */}
   </Layout>
 )
 

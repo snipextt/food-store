@@ -1,4 +1,4 @@
-const uiColor = { Food: "#0A84FF", Recipie: "#FFD60A" }
+const uiColor = { Food: "#0A84FF", Recipie: "#FF9F0A" }
 const trendingConfig = {
   0: {
     gridArea: "1/2/3/3",

@@ -34,7 +34,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Blog" />
-      <div className="blog">
+      <Box className="blog">
         <main className="container">
           <section className="row">
             <h2>Featured Posts</h2>
@@ -47,6 +47,7 @@ const IndexPage = () => {
               )}
             </section>
           </section>
+
           <section className="row">
             {postData.recent.length && (
               <CardPostGrid posts={postData.recent} column={3} />
@@ -59,7 +60,7 @@ const IndexPage = () => {
             )}
           </section>
         </main>
-      </div>
+      </Box>
     </Layout>
   )
 }

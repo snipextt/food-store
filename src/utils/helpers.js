@@ -10,7 +10,7 @@ const generatePostJSON = async elements => {
     postData = JSONData.data
     postData.forEach((element, index) => {
       element.date = moment().format("MMMM DD, YYYY")
-      element.image = index / 2 === 0 ? "office.jpg" : "autumn.jpg"
+      element.image = index / 2 === 0 ? "making.jpg" : "noodles.jpg"
       element.tags = ["Food", "Recipie"]
       element.link = "#"
       element.author = "saurav singh"
