@@ -32,13 +32,13 @@ const Header = ({ siteTitle }) => {
             <BreadcrumbLink href="/">Home</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/pets">Find Pets</BreadcrumbLink>
+            <BreadcrumbLink href="/product">Product</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/adopt">Adopt</BreadcrumbLink>
+            <BreadcrumbLink href="/blog">Blog</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/orgnizations">Orgnizations</BreadcrumbLink>
+            <BreadcrumbLink href="/about us">About us</BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
       </Box>

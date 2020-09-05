@@ -1,0 +1,19 @@
+.blog {
+
+    h2 {
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+
+    .featured {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .blog {
+        .featured {
+            flex-direction: column;
+        }
+    }
+}

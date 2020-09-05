@@ -1,0 +1,66 @@
+.post {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 200px;
+
+    .post-description {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 18px;
+        box-sizing: border-box;
+        justify-content: flex-end;
+    }
+
+    .post-title,
+    .post-date,
+    .tags-container,
+    section {
+        width: 100%;
+        z-index: 10;
+        font-weight: 300;
+    }
+
+    .post-title {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #FFF;
+    }
+
+    .post-date {
+        font-size: 12px;
+        color: $text-greyish-white;
+    }
+
+    .tags-container {
+        font-size: 11px;
+        font-weight: 500;
+        margin-bottom: 14px;
+        margin-left: -1px;
+        color: #FFF;
+
+        .tag {
+            border-radius: 5px;
+            padding: 4px 8px;
+            margin-right: 5px;
+        }
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    .post {
+        width: 100%;
+        margin: 10px 0;
+        height: 300px;
+    }
+}

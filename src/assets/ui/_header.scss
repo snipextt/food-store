@@ -6,7 +6,7 @@
   padding-left: 10px;
   font-size: 22px;
   background: white;
-  opacity: 0.75;
+  opacity: 0.85;
   position: sticky;
   border-bottom: 2px solid #e8e8e8;
   height: 60px;
@@ -36,6 +36,7 @@
     width: 100%;
     position: fixed;
     bottom: 0;
+    z-index: 99;
     justify-content: space-between;
     border-top: 0.6px solid #e8e8e8;
 

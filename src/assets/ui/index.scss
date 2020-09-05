@@ -1,7 +1,53 @@
 @import "variants";
 @import "header";
+@import "card-post-grid";
+@import "blog";
+@import "post-grid";
+@import "posts";
 
 body {
   font-family: $text;
   background: #f4f4f4;
+}
+
+.overlay::before {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  opacity: 0.5;
+}
+
+.stroke {
+  background: url("../images/stroke.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.hero {
+  background-image: url("../images/path4.png");
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-color: #f4f4f4;
+  background-position: top;
+}
+
+.container {
+  max-width: 1200px;
+
+  margin: 0 auto
+}
+
+.row {
+  margin: 4em 20px;
+}
+
+@media screen and (max-width:800) {
+  .row {
+    margin-top: 2em;
+  }
 }
